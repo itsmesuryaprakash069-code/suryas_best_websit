@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Surya | Web Designer & C Programmer</title>
+<meta name="description" content="Surya designs and builds fast, clean websites for businesses. Written by a C programmer, so the code is as tidy as the design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+<header class="top">
+  <a class="logo" href="#">Surya</a>
+  <button class="menu" aria-label="Menu" aria-expanded="false">Menu</button>
+  <nav id="nav">
+    <a href="#work">Work</a><a href="#process">Process</a><a href="#about">About</a>
+    <a class="btn small" href="#contact">Hire me</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Websites built with the discipline of low-level code.</h1>
+    <p class="lead">I design and build fast, clear websites that make your business look as good as it works. Every page is hand-coded: no bloated templates, no wasted bytes.</p>
+    <div class="cta">
+      <a class="btn" href="#contact">Start a project</a>
+      <a class="btn ghost" href="#work">See my work</a>
+    </div>
+  </div>
+  <div class="term" aria-label="C code that builds your website">
+    <div class="term-bar"><i></i><i></i><i></i><span>site.c</span></div>
+    <pre id="code" aria-live="off"></pre>
+  </div>
+</section>
+
+<section class="stats" aria-label="Quality targets">
+  <p><b>&lt; 1s</b> load time target on every page</p>
+  <p><b>100%</b> responsive: phone, tablet, desktop</p>
+  <p><b>0</b> templates or page-builder bloat</p>
+  <p><b>AA</b> accessible contrast and keyboard use</p>
+</section>
+
+<section id="work" class="work">
+  <h2>Selected work</h2>
+  <p class="sub">Replace these three with your real projects: screenshot, one-line result, link.</p>
+  <ul>
+    <li><a href="#" class="proj">
+      <div class="thumb t1"><span>Fitness studio</span></div>
+      <div><h3>IronWorks Gym website</h3><p>Class timetable, membership plans and online booking. Mobile sign-ups up after launch.</p><small>HTML, CSS, JavaScript</small></div>
+    </a></li>
+    <li><a href="#" class="proj">
+      <div class="thumb t2"><span>Local business</span></div>
+      <div><h3>Sharma Sweets storefront</h3><p>Menu, gallery and WhatsApp ordering in a single fast page.</p><small>HTML, CSS, JavaScript</small></div>
+    </a></li>
+    <li><a href="#" class="proj">
+      <div class="thumb t3"><span>Developer tool</span></div>
+      <div><h3>C Notes documentation site</h3><p>Searchable reference with syntax highlighting and dark mode.</p><small>HTML, CSS, JavaScript</small></div>
+    </a></li>
+  </ul>
+</section>
+
+<section id="process" class="process">
+  <h2>How a project runs</h2>
+  <ol>
+    <li><h3>Brief</h3><p>A short call to learn your goals, audience and deadline. You get a fixed quote.</p></li>
+    <li><h3>Design</h3><p>Layout and style preview before any code. Two rounds of changes included.</p></li>
+    <li><h3>Build</h3><p>Hand-coded, tested on real phones and browsers, and checked for speed.</p></li>
+    <li><h3>Launch</h3><p>I publish it, hand over the files and stay on for 30 days of free fixes.</p></li>
+  </ol>
+</section>
+
+<section id="about" class="about">
+  <div class="photo"><img src="images/surya.jpg" alt="Surya watching the sunset by the sea" onerror="this.parentNode.classList.add('empty')"></div>
+  <div>
+    <h2>Hi, I'm Surya</h2>
+    <p>I'm a C programmer who designs websites. C taught me to care about every byte and every edge case, and that is why my sites load quickly and don't break.</p>
+    <p>Outside of code I train at the gym. Lifting taught me that progress comes from showing up, repeating the basics and finishing every set. I bring the same habit to client work: clear updates and delivery on the date I promise.</p>
+    <ul class="skills"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>C</li><li>Responsive design</li><li>SEO basics</li><li>Git</li></ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Tell me about your project</h2>
+  <p class="sub">I reply within one working day.</p>
+  <form id="form" novalidate>
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <label class="full">What do you need?<textarea name="msg" rows="4" required></textarea></label>
+    <button class="btn" type="submit">Send message</button>
+    <p id="status" role="status"></p>
+  </form>
+</section>
+</main>
+
+<footer><p>&copy; <span id="yr"></span> Surya. Designed and coded by hand.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
